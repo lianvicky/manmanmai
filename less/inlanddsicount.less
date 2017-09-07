@@ -1,0 +1,46 @@
+@import url(base.less);
+//主体部分
+.main{
+  background-color:#fff;
+  overflow: hidden;
+    .item{
+      width:50%;
+      height:12rem;
+      float:left;
+      overflow: hidden;
+      box-sizing: border-box;
+      border:1px solid #ccc;
+      border-top:0;
+      &:nth-child(even) {
+        border-left:none;
+      }
+      a{
+        box-sizing: border-box;
+        display:block;
+        padding:18/40rem 0 0 18/40rem;
+        .pic{
+          width:60%;
+          height:5.5rem;
+          margin:20/40rem auto;
+        }
+        .info{
+          margin-top:20/40rem;
+          font-size:20/40rem;
+          color:#000;
+          height:186/40rem;
+         .title{
+           font-weight:bold;
+           height:80/40rem;
+         }
+          .price{
+            color:@color;
+            margin:0.25rem 0;
+          }
+          .mall-info{
+            color:#a1a1a1;
+            font-size:14/40rem;
+          }
+        }
+      }
+    }
+}

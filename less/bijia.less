@@ -1,0 +1,137 @@
+@import url(base.less);
+//导航栏
+.pro-line{
+  height:2rem;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  background:linear-gradient(to bottom,#ffffff,#ededed);
+  line-height:2rem;
+  position: relative;
+  font-size:20/40rem;
+  button{
+    width:120/40rem;
+    height:60/40rem;
+    right:10/40rem;
+    font-size:20/40rem;
+    border-radius:10/40rem;
+    border:1px solid #ccc;
+    background:linear-gradient(to bottom,#d6d6d6,#fefefe);
+  }
+  .left{
+    margin-left:10/40rem;
+    a{
+      color:#000;
+      font-size:20/40rem;
+    }
+  }
+}
+//主体部分
+.main{
+  background-color:#fff;
+  position: relative;
+  .title{
+    width:90%;
+    margin:0 auto;
+    font-size:40/40rem;
+    height:200/40rem;
+    padding-top:20/40rem;
+    text-align:center;
+  }
+  .pic{
+    width:330/40rem;
+    display:block;
+    margin:0 auto;
+  }
+  .like{
+    width:2rem;
+    height:2rem;
+    position: absolute;
+    right:2.7rem;
+    bottom:8rem;
+  }
+  .tab{
+    height:67/40rem;
+    background-color:#ffc62c;
+    border-top:1px solid #bb4731;
+    border-bottom:1px solid #bb4731;
+    li{
+      width:33.333%;
+      height:67/40rem;
+      float:left;
+      box-sizing: border-box;
+      &:nth-child(2){
+        border-left:1px solid #bb4731;
+        border-right:1px solid #bb4731;
+      }
+      a{
+        display:block;
+        width:100%;
+        height:100%;
+        color:white;
+        font-size:28/40rem;
+        text-align:center;
+        line-height:67/40rem;
+      }
+
+    }
+  }
+  .pay{
+    height:85/40rem;
+    border-bottom:1px solid #ccc;
+    line-height:85/40rem;
+    font-size:28/40rem;
+    padding:0 10/40rem;
+    td{
+      &:nth-child(1){
+       margin-left:16/40rem;
+       text-align:center;
+      img{
+        width:30/40rem;
+        height:30/40rem;
+        display:inline-block;
+        vertical-align: middle;
+       }
+      }
+      &:nth-child(2){
+        margin-top:33/40rem;
+        a{
+          color:#000;
+          font-size:28/40rem;
+        }
+      }
+      &:nth-child(3){
+        color:red;
+        text-align:right;
+      }
+     }
+    }
+  .tip{
+    padding:20/40rem;
+    line-height:40/40rem;
+  }
+}
+//产品评价
+.product-comment {
+  .product-title {
+    height: 66/40rem;
+    border-top: 10/40rem solid #616161;
+    background-color: #dbdbdb;
+    line-height: 66/40rem;
+    text-align: center;
+  }
+  .product-com-list {
+    padding: 10/40rem;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    li {
+      padding-top:0.3rem;
+      border-bottom: 1px solid #ccc;
+      .content {
+        margin-top: 10/40rem;
+        color: #000;
+        font-size: 20/40rem;
+        line-height: 50/40rem;
+      }
+    }
+  }
+}

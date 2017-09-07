@@ -1,0 +1,165 @@
+@import url(base.less);
+//内容区域
+.main{
+  background-color:#fff;
+  padding:0 15/40rem;
+  .title{
+    font-size:28/40rem;
+    line-height:100/40rem;
+    font-weight:bold;
+  }
+  .price{
+    color:@color;
+    font-weight:bold;
+    font-size:20/40rem;
+    margin-bottom:16/40rem;
+  }
+  .mall-info{
+    font-size:20/40rem;
+    margin-bottom:1rem;
+  }
+  .content{
+    font-size:25/40rem;
+    .pro-info{
+      margin-bottom:20/40rem;
+      img{
+        width:250/40rem;
+        height:275/40rem;
+      }
+    }
+    p{
+      margin:0 auto;
+      margin-bottom:1rem;
+      img{
+        width:13rem;
+        height:auto;
+      }
+    }
+    .drop{
+      margin-top:20/40rem;
+      width:180/40rem;
+      margin:0 auto;
+      border-width:0px 1px 1px 1px;
+      border-color:#f1f1f1 #f1f1f1 #dbdbdb #f1f1f1;
+      box-shadow:1px 2px 5px rgba(0, 0, 0, 0.1);
+      #disstorck{
+        width:180/40rem;
+        li{
+          width:180/40rem;
+          height:1rem;
+          a{
+            display:block;
+            width:80%;
+            border-bottom:1px dashed #ccc;
+            margin:0 auto;
+          }
+          span{
+            font-size:20/40rem;
+            color:#000;
+            strong{
+              color:red;
+              float:right;
+            }
+          }
+        }
+      }
+    }
+  }
+  .buy{
+    margin-top:20/40rem;
+    width:100%;
+    height:66/40rem;
+    padding-bottom:80/40rem;
+    a{
+      display:block;
+      width:90%;
+      height:100%;
+      margin:0 auto;
+      background-color:@color;
+      border-radius:10/40rem;
+      font-size:28/40rem;
+      text-align:center;
+      line-height:66/40rem;
+      color:white;
+    }
+  }
+  .cu-content-pl{
+    margin-top:30/40rem;
+    background-color: #fff;
+    .tit {
+      font-size: 30/40rem;
+      margin:16/40rem 0;
+    }
+    .reply {
+        border: 2px solid #ccc;
+      .form{
+        textarea {
+          padding: 4px;
+          box-sizing: border-box;
+          width: 100%;
+          height: 144/40rem;
+          resize: none;
+          border: none;
+          outline: none;
+          font-size:16/40rem;
+        }
+        .ctrl {
+          border-top: 1px solid #ccc;
+          width: 100%;
+          height: 74/40rem;
+          background-color: #fbfbfb;
+          input {
+            width: 200/40rem;
+            height: 74/40rem;
+            background-color: @color;
+            font-size: 32/40rem;
+            color: #fff;
+            border: none;
+            float: right;
+          }
+        }
+      }
+    }
+    .list {
+      background-color: white;
+      ul {
+        padding-bottom: 2rem;
+        li {
+          padding: 18/40rem 10/40rem;
+          .userimg {
+            width: 85/40rem;
+            height: 85/40rem;
+            border-radius: 50%;
+            overflow: hidden;
+            float: left;
+          }
+          .con {
+            overflow: hidden;
+            padding-left: 10/40rem;
+            .name {
+              margin-bottom: 6/40rem;
+              .username {
+                color: #6495c0;
+                font-size: 26/40rem;
+                float: left;
+              }
+              .time {
+                font-size: 20/40rem;
+                margin-left: 8/40rem;
+                float: right;
+              }
+            }
+            .content {
+              font-size: 26/40rem;
+              word-break: break-all;
+              img {
+                width: 18/40rem;
+                height: 18/40rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

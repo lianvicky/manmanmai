@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>sitenav.html</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <link rel="stylesheet" href="less/sitenav.css"/>
+  <script src="js/common/rem.js"></script>
+</head>
+<body>
+<!--头部区域开始-->
+<header>
+  <div class="iconback">
+    <a href="index.html" class="center-self-y"></a>
+  </div>
+  <h3 class="center-self-xy">商场导航</h3>
+  <div class="header-app center-self-y"></div>
+</header>
+<!--头部区域结束-->
+<!--内容部分开始-->
+<script type="text/template" id="list">
+  <ul class="clearfix">
+ {{each result as value i}}
+    <li>
+      <a href="{{value.navHref}}">
+        <img src="{{value.navImg}}" alt=""/>
+        <span>{{value.navTitle}}</span>
+      </a>
+    </li>
+ {{/each}}
+  </ul>
+</script>
+<section class="main">
+
+</section>
+<!--内容部分结束-->
+<!--首页尾部开始-->
+<section class="login">
+  <a href="javascript:;">登录</a>
+  <a href="javascript:;">注册</a>
+  <a class="back" href="#"><img src="images/icons/top.jpg" alt=""/>返回顶部</a>
+</section>
+<footer>
+  <p><span class="mobile-app">手机APP下载</span> 慢慢买手机版 -- <span>掌上比价平台</span></p>
+  <p class="net">m.manmanbuy.com</p>
+</footer>
+<!--首页尾部结束-->
+<script src="js/common/art-template.js"></script>
+<script src="js/common/jquery-1.11.1.min.js"></script>
+<script src="js/common/Route.js"></script>
+<script src="js/common/Tools.js"></script>
+<script src="js/sitenav.js"></script>
+</body>
+</html>

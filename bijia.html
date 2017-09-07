@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>详情页</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <link rel="stylesheet" href="less/bijia.css"/>
+  <script src="js/common/rem.js"></script>
+</head>
+<body>
+<!--头部区域开始-->
+<header>
+  <div class="header-logo center-self-y"><a href="index.html"></a></div>
+  <div class="header-app center-self-y"></div>
+</header>
+<section class="search">
+  <div class="search-btn fr">
+    <button class="center-self-y">搜索</button>
+  </div>
+  <div class="search-area">
+    <input class="center-self-y" type="text" placeholder="请输入你想比价的商品">
+  </div>
+</section>
+<!--头部区域结束-->
+<!--面包屑导航第二个a模板-->
+<script type="texct/template" id="category">
+  {{each result as value i}}
+  <a href="productlist.html?categoryid={{value.categoryId}}&category={{value.category}}&pageid=1">{{value.category}}</a>
+  {{/each}}
+ </script>
+<!--面包屑导航第三个a模板-->
+<script type="text/template" id="productName">
+  {{each result as value i}}
+  <a href="#">{{value.productName.split(' ')[0]}}</a>
+  {{/each}}
+</script>
+<!--面包屑导航-->
+<section class="pro-line">
+  <button class="center-self-y">筛选</button>
+  <div class="left">
+    <a href="index.html">首页</a>>
+    <span class="second-a"></span>>
+    <span class="third-a"></span>>
+  </div>
+</section>
+<!--内容部分开始-->
+<!--主体模板-->
+<script type="text/template" id="tpl">
+  {{each result as value i}}
+  <div class="title">
+      {{value.productName}}
+  </div>
+  <div class="pic"> {{#value.productImg}}</div>
+  <div class="like">
+    <a href="javascript:;"><img src="http://www.zuyushop.com/wap/images/sc.jpg" alt="收藏"/></a>
+  </div>
+  <div class="tab">
+    <ul class="clearfix">
+      <li><a href="javascript:;">比较购买</a></li>
+      <li><a href="javascript:;">产品参数</a></li>
+      <li><a href="javascript:;">评价(2322)</a></li>
+    </ul>
+  </div>
+  <div class="pay">
+    {{#value.bjShop}}
+  </div>
+  <div class="tip">
+    * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+  </div>
+    {{/each}}
+</script>
+<!--主体模板-->
+<section class="main">
+</section>
+<!--评价部分-->
+<section class="product-comment">
+  <div class="product-title">网友评价</div>
+  <div class="product-com-list">
+  </div>
+</section>
+<!--评价部分模板-->
+<script type="text/template" id="dis">
+  <ul>
+    {{each result as value i}}
+    <li>
+      <div class="user-about">
+        <div class="clearfix">
+          <div class="user-name fl">{{value.comName}}</div>
+          <div class="fr">{{value.comTime}}</div>
+        </div>
+        <div class="clearfix">
+          <div class="fr">{{value.comFrom}}</div>
+        </div>
+      </div>
+      <div class="content">
+        {{value.comContent}}
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+</script>
+<!--内容部分结束-->
+<section class="more">
+  <a href="javascript:;">查看更多评价>></a>
+</section>
+<!--尾部开始-->
+<section class="login">
+  <a href="javascript:;">登录</a>
+  <a href="javascript:;">注册</a>
+  <a class="back" href="#"><img src="images/icons/top.jpg" alt="乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视"/>返回顶部</a>
+</section>
+<footer>
+  <p><span class="mobile-app">手机APP下载</span> 慢慢买手机版 -- <span>掌上比价平台</span></p>
+  <p class="net">m.manmanbuy.com</p>
+</footer>
+<!--尾部结束-->
+<script src="js/common/art-template.js"></script>
+<script src="js/common/jquery-1.11.1.min.js"></script>
+<script src="js/common/Route.js"></script>
+<script src="js/common/Tools.js"></script>
+<script src="js/bijia.js"></script>
+</body>
+</html>

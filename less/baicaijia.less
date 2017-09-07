@@ -1,0 +1,144 @@
+@import url(base.less);
+@colorred:#fc353a;
+header{
+  background-color:#f4483e;
+}
+//标题列表部分
+.list-title{
+  height:83/40rem;
+  background-color:#fff;
+  overflow: hidden;
+  position: relative;
+  ul{
+    width:30rem;
+    height:83/40rem;
+    li{
+      padding:0 10/40rem;
+      float:left;
+      line-height:2rem;
+      a{
+        display:block;
+        color:#000;
+        font-size:30/40rem;
+      }
+    }
+  }
+  .search{
+    position:absolute;
+    right:0;
+    width:2rem;
+    height:80/40rem;
+    img{
+      width:100%;
+    }
+  }
+}
+//内容列表部分
+.list-pro{
+  .item{
+    background-color:#fff;
+    margin-top:10/40rem;
+    height:300/40rem;
+    padding:20/40rem 10/40rem;
+    box-sizing: border-box;
+    .pic{
+      width:260/40rem;
+      height:260/40rem;
+      padding:10/40rem;
+      float:left;
+    }
+    .info{
+      height:260/40rem;
+      position: relative;
+      .tit{
+        font-size:0.8rem;
+      }
+      .price{
+        font-size:45/40rem;
+        color:#f4483e;
+        i{
+          font-size:38/40rem;
+        }
+        em{
+          font-size:26/40rem;
+        }
+        del{
+          font-size:20/40rem;
+          color:#ccc;
+        }
+      }
+      .progress{
+        position: absolute;
+        width:60%;
+        height:40%;
+        right:10/40rem;
+        bottom:0rem;
+        font-size:20/40rem;
+        .bar{
+         i{
+           width:170/40rem;
+           height:28/40rem;
+           background-color:#ffb7b7;
+           border:1px solid #fc353a;
+           display:inline-block;
+           border-radius:20/40rem;
+           float:left;
+           box-sizing: border-box;
+           position:relative;
+           em{
+            position:absolute;
+             top:0rem;
+             left:0rem;
+             background-color:#fc353a;
+             border-radius:20/40rem;
+             height:0.65rem;
+           }
+           span{
+             position: absolute;
+             top:2/40rem;
+             left:17%;
+             font-size:20/40rem;
+             line-height:0.65rem;
+             width:10/40rem;
+             color:white;
+           }
+         }
+          b{
+            float:left;
+            font-size:30/40rem;
+            margin-top:-0.3rem;
+            margin-left:30/40rem;
+            color:@colorred;
+          }
+        }
+        .cheap{
+          margin-top:10/40rem;
+          a{
+            &:nth-child(1){
+            color:#e4393c;
+            border:1px dashed #e4393c;
+            display:inline-block;
+            width:250/40rem;
+            height:50/40rem;
+            line-height:50/40rem;
+            text-align:center;
+            font-size:20/40rem;
+            }
+            &:nth-child(2){
+              width:116/40rem;
+              font-size:20/40rem;
+              color:white;
+              padding:10/40rem;
+              border-radius:10/40rem;
+              background-color:@colorred;
+              margin-left:1.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.active{
+  border-bottom:5px solid @colorred;
+}
